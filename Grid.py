@@ -4,7 +4,7 @@ directionVectors = (UP_VEC, DOWN_VEC, LEFT_VEC, RIGHT_VEC) = ((-1, 0), (1, 0), (
 vecIndex = [UP, DOWN, LEFT, RIGHT] = range(4)
 
 class Grid:
-    def __init__(self, size = 4):
+    def __init__(self, size=4):
         self.size = size
         self.map = [[0] * self.size for i in range(self.size)]
 
@@ -189,6 +189,8 @@ if __name__ == '__main__':
             print(i)
 
         print(g.getAvailableMoves())
+        print(g.map)
+        print(g.getMaxTile())
 
         v = input()
 

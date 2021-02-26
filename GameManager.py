@@ -43,6 +43,7 @@ class GameManager:
 
     def updateAlarm(self, currTime):
         if currTime - self.prevTime > timeLimit + allowance:
+            print("Time exceed")
             self.over = True
         else:
             while time.time() - self.prevTime < timeLimit + allowance:
